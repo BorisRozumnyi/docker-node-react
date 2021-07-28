@@ -19,5 +19,8 @@
   "homepage": "https://github.com/BorisRozumnyi/docker-node-react#readme",
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
