@@ -6,3 +6,23 @@
 - cd frontend
 - yarn
 - yarn start
+
+
+## Docker:
+- docker build . -t project-name/backend
+- docker run \
+  -d \
+  --rm \
+  -p 8080:8080 \
+  project-name/backend
+
+- cd frontend
+- docker build -t project-name/frontend .
+- docker run \
+  -it \
+  --rm \
+  -v ${PWD}:/app \
+  -v /app/node_modules \
+  -p 3000:3000 \
+  -e CHOKIDAR_USEPOLLING=true \
+  project-name/frontend
