@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [getData]);
 
   return (
     <div className="App">
